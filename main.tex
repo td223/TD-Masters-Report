@@ -3,7 +3,38 @@
 % ------------------------------------------------------------------------------
 \documentclass[12pt]{report} 
 
-\usepackage{projectreport}
+%\usepackage{projectreport}
+% Preamble
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{appendix}
+\usepackage[superscript]{cite}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{adjustbox}
+\usepackage{caption}
+\usepackage{setspace}
+\usepackage{soul}
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage{modiagram}
+\usepackage{chemscheme}
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+\usepackage{enumitem}
+\usepackage{pdflscape}
+\bibliographystyle{unsrt}
+
+% Word count (requires --shell-escape)
+\newcommand{\wordcount}{%
+  \immediate\write18{texcount -1 -sum -merge -q main.tex > main-wordcount.sum}%
+  \input{main-wordcount.sum}%
+}
+ 
 
 
 % ------------------------------------------------------------------------------
@@ -48,6 +79,8 @@
 \chapter*{Abstract}
 \input{abstract}
 
+\noindent\textbf{Word count: \wordcount}
+
 \tableofcontents
 \listoffigures
 % \listoftables
@@ -75,12 +108,16 @@
 
 % \usepackage{doi}
 % \usepackage{hyperref}
-%  \bibliography{references}{}
 
-\cleardoublepage
-\addcontentsline{toc}{chapter}{References}
-\renewcommand\bibname{References}
-\printbibliography
+
+\bibliography{references}{}
+
+
+
+% \cleardoublepage
+% \addcontentsline{toc}{chapter}{References}
+% \renewcommand\bibname{References}
+% \printbibliography
 % ------------------------------------------------------------------------------
 % Appendices
 % ------------------------------------------------------------------------------
