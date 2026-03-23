@@ -2,6 +2,7 @@
 *.aux
 *.sum
 *.bbl
+*.blg
 *.fdb_latexmk
 *.fls
 *.lof
