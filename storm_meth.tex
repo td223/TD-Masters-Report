@@ -7,7 +7,14 @@ Our methodology is inspired by similar "bellows-style" approaches to construct c
 This work focuses on the use of Kapton (thickness = ) due to its good robustness and high temperature capabilities.
 
 \subsection{Stiffness Characterisation}
+THe stiffness of the polyimide sleeve applies an additional force on the silicon actuation device. For instance, when the device is pressurised, the additional forces applied to the device from the stiffness of the sleeve will affect the amount of air pressure needed to vary the actuators length. To characterise the stiffness profile, a linear stage was used with a load cell (brand) held in a SmallRig Magic Arm. This was attached to the end of the polyimide sleeve which was clamped in a 3D printed stand. The whole experimental setup was attached to a ThorLabs Breadboard. The linear stage was set to 60mm ( the resting length of the actuator was 120mm, the linear stage is in reverse so to get to 60mm, the linear displacement is 90) and the load cell was zeroed. The load cell was moved to 150mm ( actuator length is 20mm compressed) and then the linear stage was set to go to 0mm at 0.5mm s$^{-1}$. This contained a compression force and a stretching force. The speed of the actuator was translated into the displacement using: \[v= \frac{d}{t}\]. The load cell data was collected using DSCUSB Toolkit and processed in python.
 
-\subsection{Temperature Stability of the Bellows}
+\subsection{Temperature Stability of the Polyimide Sleeve}
+
+Using the same experimental set-up as the stiffness characterisation. The kapton\textsuperscript{\textregistered} was put in an oven at 200$\degree$C for 1 hour, left to cool and then compressed and stretched as before. 
 
 \subsection{Workspace Characterisation}
+
+
+\subsection{Moulding of polyamic acid}
+Polyamic acid undergoes an imidisation reaction at 150-200$\degree$ to form Kapton. It shoudl, in theory be prossible to pour the polyamic acid into a mould and heat to form Kapton. This was attempted by pouring the PAA into a mould and heating to 150$\degree$C for 20 mins to cause imidisation. This was repeated after placing half the mould into the smartvap with a 3D printed adaptor. The smartvap heats the sample and blows a stream of air into a vortex over a sample to remove the solvent. This was performed for a week before then heating the sample to 150$\degree$C for 1 hour.
