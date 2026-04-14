@@ -1,26 +1,59 @@
 \section{Results}
 \subsection{Hydrolysis of the Polyimide}
-The hydrolysis of the polyimide follows a standard mechanism for hydrolysis of an amide to a carboxylic acid using sodium hydroxide (NaOH). These show the hydroxy group nucleophilically adding to the carbonyl group bfore the amine is eliminated . The negative charge on the eliminated amine likely deprotonates the carboxylic acid and forms the sodium salt on the carboxylate anion (find some good references for these).
+Our method was based on previous literature publications \cite{stephans2000kinetics,thomas1992organic,plechaty1992chemical,dow2010modification,liu2019efficient,wu2017study,xue1986studies,stoffel1996surface} where a alkaline solution is used to hydrolyse the polyimide to form a sodium salt intermediate and then an acidification to form the carboxlyic acid groups. We trialled the first step with a NaOH solution (conc.) \cite{stephans2000kinetics,thomas1992organic,plechaty1992chemical} at room temperature for 90 mins, however when there was insiginificant change to the IR spectrum we increased the temperature to 120C, and also observed minimal hydrolysis.
+
+A widely accepted base-catalysed amide hydrolysis route is through a second order pathway, where the hydroxy group nucleophillically adds to the carbonyl group to form a tetrahedral intermediate \cite{o1970acidic} before this cleaves into two and the amine is eliminated. This is also shown in pthalimide structures \cite{khan1984kinetics} when in solution.
+
+However, there are changes when the reaction contains macromolecules, it has been shown in previous literature that there is a third order dependence on [OH$^-$] and therefore follows a mechanism that starts with the nucleophillic addition of the OH$^-$ to form a charged intermediate that undergoes rate-determining cleavage of the C-N bond to form the polyamic acid.\cite{stephans2000kinetics}. There is also published results that propose that, due the hydrostatic repulsion, the rate of reaction is lowered when a polymeric chain has increasing numbers of negative charges \cite{moens1957alkaline}, this may mean that the formation of the monanion intermediate could hinder the reaction.
 
 
-A widely accepted base-catalysed amide hydrolysis route is through a second order pathway, where the hydroxy group nucleophillically adds to the carbonyl group to form a tetrahedral intermediate \cite{o1970acidic} before this splits into two and the amine is eliminated. However, there are changes when the reaction contains macromolecules, it has been shown in previous literature that the rate of reaction is lowered when the polymeric chain has increasing numbers of negative charges \cite{moens1957alkaline} due the hydrostatic repulsion. Therefore when the amine that is eliminated gains a negative charge, this may hinder the reaction.
-%However, amides are difficult to turn into carboxylic acids due to the significant resonance form when there is a C-N pi bond.
+We opted for a concentration similar to \cite{xue1986studies} where we use 1 equiv. OH$^{-}$ for every 1 monomer of the polyimide. This was chosen as to only partially hydrolyse one of the imide rings, to only expose one carboxylic acid group rather than the total hydrolysis to the tetrasubstituted benzene ring.
 
-Our method was based on previous literature publications \cite{stephans2000kinetics,thomas1992organic,plechaty1992chemical} where a NaOH solution is prepared to form a sodium salt intermediate and then an acidification to form the carboxlyic acid groups. We trialled this first step with a NaOH solution (conc.) at room temperature for 90 mins, however when there was insiginificant change to the IR spectrum we increased the temperature to 120C, and we also observed minimal hydrolysis.
-
-We attribute some of the failure in the hydrolysis route to the lack of addition of a reagent to maintain constant ionice strength
-
-Multiple literature sources opt to use KOH instead of NaOH\cite{dow2010modification,wu2017study,xue1986studies,stoffel1996surface} which reports a good success rate when using a concentration above 0.5M \cite{wu2017study}. 
+ 
+While multiple literature sources opt to use KOH\cite{dow2010modification,wu2017study,xue1986studies,stoffel1996surface}, we trialled NaOH. In retrospect, using KOH may have been a better approach as many KOH based literature sources have a good success rate. However, we attribute most of the failure in this experiment to the low concentration of NaOH, as sources have stated that a concentration below 0.5M was ineffective \cite{wu2017study}. This may explain why our testing with 0.04M was also ineffective. Additionally, some of the failure may be caused by the lack of addition of a reagent to maintain constant ionic strength, which has been shown to assist hydrolysis with NaOH \cite{stephans2000kinetics}.
 
 
 \subsubsection{Structural Analysis}
 Structural determination was conducted via Infrared spectroscopy. A comparison was made between the attempted hydrolysis of the sheets and a purchased form (polyamic acid). 
 
-The infrared spectra of the hydrolysis attempts indicate that the crosslinking was not a successful reaction as the peaks in the spectrum are extremely similar to the unreacted form of the polymer. Also, in a comparison to the purchased PAA, which should be the hydrolysed product that we were hoping for, the region around 3000 cm$^{-1}$ is much busier and has the characteristic wide OH region. This would indicate that the hydrolysis hasn't occurred in our attempts as there isn't this wide OH peak. 
 
-This lack of success maybe due to the imide ring breaking and reforming as the temperature of the reaction is likely higher than the imide formation temperature. Therefore, the amide bond may get broken and reform at the high temperature. However, this seems a little unlikely though as there would likely be a suspension of material along with the main polymer.
+Characteristic peaks in hydrolysis attempts are at around 1500cm$^{-1}$ \cite{wu2017study,dow2010modification}, this peak corresponds to the C=C bond in the central benzene ring that does not change throughout the hydrolysis. We also have the C=O  symmetric stretching mode at around 1710 cm$^{-1}$ \cite{dow2010modification, wu2017study,liu2019efficient,xue1986studies,thomas1992organic}, which during hydrolysis decreases in magnitude \cite{liu2019efficient,wu2017study}. Other peaks are around 1775 cm$^{-1}$ as the symmetric C=O stretch, the C-N-C imide ring stretch at 1370 cm$^{-1}$ and the 1235 cm$^{-1}$ aromatic ether stretch.
 
-The amount of NaOH was chosen to be in the ratio of 1:4 (NaOH:monomer) as there was a concern that we may fully hydrolyse the polymer (at all 4 amide bonds in the two imide rings) and give a tetrasubsituted benzene ring. 
+
+
+
+One literature source \cite{chang2000two} states that the symmetric C=O stretch is at 1775 cm$^{-1}$ and the asymmetric is at 1720 cm$^{-1}$ however, we disregard this result as a mistake.
+
+
+Some literature estimate their degree of hydrolysis with a comparison of the ratio of intensities of the 1720:1500 cm$^{-1}$ peaks \cite{wu2017study,xue1986studies}, these are summarised in the table \ref{tab:irratio}. In our findings we see this peak slightly lower at around 1710 cm$^{-1}$
+
+As in the Wu 2017 paper, we assumed the Kapton sample to have 100\% imide content on the surface, we find that the polyamic acid sample contains 18.71\% surface imide content. We also find that the surface imide content decreases with both time and an increase in NaOH concentration. We find that the best of our test samples was the 90 minute, 0.2M hydrolysis at room temperature, giving a total imide surface content of 94.24\%, meaning that 5.76\% of the imide rngs were cleaved.
+
+\begin{table}[h]
+\centering
+
+\begin{tabular}{llcccccc}
+\hline
+\textbf{Sample} & \textbf{Base} & \textbf{Conc. /M} & \textbf{A$_{1500}$} & \textbf{A$_{1720}$} & \textbf{A$_{1720}$/A$_{1500}$} & \textbf{Rel. imide content} \\
+\hline
+90 min, 25$\degree$C  & NaOH & 0.2  & 0.2243 & 0.2304 & 1.0273 & 0.9424 \\
+20 min, 120$\degree$C   & NaOH & 0.03 & 0.1062 & 0.1167 & 1.0990 & 1.0082 \\
+40 min, 120$\degree$C   & NaOH & 0.03 & 0.1608 & 0.1735 & 1.0789 & 0.9898 \\
+Kapton      & ---  & ---  & 0.1125 & 0.1226 & 1.0900 & 1.0000 \\
+PAA         & ---  & ---  & 0.8508 & 0.1735 & 0.2040 & 0.1871 \\
+\hline
+Wu (2017)   & KOH  & 0    & 0.0513 & 0.0587 & 1.1440 & 1.0000 \\
+Wu (2017)   & KOH  & 0.1  & 0.0504 & 0.0573 & 1.1375 & 0.9943 \\
+Wu (2017)   & KOH  & 0.5  & 0.0511 & 0.0568 & 1.1096 & 0.9699 \\
+Wu (2017)   & KOH  & 1    & 0.0587 & 0.0617 & 1.0519 & 0.9194 \\
+Wu (2017)   & KOH  & 5    & 0.0763 & 0.0072 & 0.0946 & 0.0827 \\
+\hline
+\end{tabular}
+\caption{ATR-FTIR absorbance ratios and relative imide surface content for various samples in comparison to Wu (2017)\cite{wu2017study}}
+\label{tab:irratio}
+
+\end{table}
+
 
 \subsection{Spectrophotometry}
 The test for carboxylic acids as laid out by GS Johar would in theory be a good test for determination of the hydrolysis of the polyamic acid. Therefore we tested for its interaction with acetic acid as the assumed positive test, along with DMSO as this was the solvent the polyamic acid was dissolved in, the polyamic acid in DMSO, water and also hydrochloric acid to test the interaction was not pH based. This was tested with three different concentrations of dyes. Only the results from the least concentrated samples will be included as the absorbance is too high for most of the analysis on the more highly concentrated versions.
