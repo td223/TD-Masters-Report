@@ -2,6 +2,38 @@
 
 \subsection{Stiffness Characterisation}
 
+% A reliable paragraph structure
+
+% 1)State the key finding in one sentence
+% 2)Offer a mechanistic explanation
+% 3)Compare to literature or expectation
+% 4)Acknowledge limitations or anomalies
+% 5)State the implication for your device/application
+
+
+%compression
+%1)
+The compression of the device was observed to be modelled by an exponential plot, this gave a peak force of x relative to zeroing at a relaxed length of 120mm. 
+%2) why is the compression exponential
+The kapton sleeve is acting as a non-linear spring. Origami structures have been shown to act as nonlinear springs\cite{chen2022origami} when a uniaxial force is applied. 
+%3) 
+Reid (2017) \cite{reid2017geometry} test the force under uniaxial loading for an accordion style device constructed from Acetate (thickness:0.1mm). Instead of a manually folded construction, hinges are created by perforating the material with a laser cutter. 
+
+%4) limitations
+Due to the design process being time consuming, a limited number of kapton sleeves were contructed. Combined with the fact that the sleeves were fragile and prone to failing on the corners, the device was not consistently air tight. This meant that the unpressurised stiffness was characterised, this is an uncommon method and due to the number of parameters related to the design of the sleeve, a direct literature comparison was not available.
+
+Also, the linear stage should have been set to go out and back because we have assumed that the force would be the same but it might not be, also it would do something interesting with the zero point which shifts.
+
+Because the compression of the device causes the folds to settle, the zero point when expanding occurs earlier than expecting meaning the relaxed length changes. If the linear stage was set to go in, then out and then back in, there would be a full profile of extension and compression
+
+The constraint method of a rod up the inside caused the slight wiggles in the plots, although care was taken to stay away from the load cell attachment, the experimental set-up could have been varied to include bars that would slip inside the mount avoiding the need for the manual constraint.
+
+%5
+However, the non-linear force profile of this device implies that when the device is extended most it applies the least linear force. This means that during actuation, the device will want to return to its relaxed length. Hence, the pressure required to extend when the sleeve is constrained to a length shorter than 120mm will be lower than if it was acting as a linear spring. This unpressurised characterisation sets a low bound on the stiffness of the device when pressurised the device will exert more force axially. The implication of the settling behaviour of the folds is that, in the future, the developmetn of a control platform would have to take this into account.
+
+
+
+
 The stiffness of the polyimide sleeve applies an additional force on the silicon actuation device. For instance, when the device is pressurised, the additional forces applied to the device from the stiffness of the sleeve will affect the amount of air pressure needed to vary the actuators length. 
 
 
