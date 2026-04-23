@@ -69,7 +69,22 @@ Due to the unique nature of this device, direct literature comparison for a simi
 
 To evaluate the stability of the acutator, tis was placed in the oven. After removing and running the sample 3 times after an hour each time. We determined that the actuator was very temperatrue stable.
 
-Data from te he load cell was processed in python and plotted in graphs. The plots were trimmed to start once the force was over 0.2N. This gave plots as shown in \ref{fig:heat_test}. 
+Data from the load cell was processed in python and plotted in graphs. The plots were trimmed to start once the force was over 0.2N. This gave plots as shown in \ref{fig:heat_test}. 
+
+% 1)State the key finding in one sentence
+This report found that there was minimal change to the performance of the kapton sleeve after heat treatment, it was observed that the variability on results is less than x when calculated using python
+% 2)Offer a mechanistic explanation
+This is due to kapton having a thermal decomposition at x temperature, hence the lack of behavioural change after heating to 200$\degree$C is unsurprising.
+% 3)Compare to literature or expectation
+Kapton based structures have been shown to resist many thermal cycles before degrading \cite{butler2016highly}
+% 4)Acknowledge limitations or anomalies
+Limitations of this experiment are similar to the stiffness characterisation tests due to the use of the same experimental set-up
+
+% 5)State the implication for your device/application
+The lack of behavioural change implies that the assembly would be well suited to a thermally harsh environment. Paired with other properties such as the resistance to UV degradation this motivates the use of polyimide as a material for space robotics.
+
+
+
 
 \subsection{Workspace Characterisation}
 
@@ -79,6 +94,21 @@ Workspace characterisation of a device is important to gain an understanding of 
 The workspace of a device is the set of all reachable tip positions that the device can achieve \cite{granna2014characterizing}. 
 
 We tested 4 different assemblies which gradually increase the stiffness to demonstrate the stabilisation of the polyimide sleeve to aid the controllability of the silicon actuation device. 
+
+
+
+% 1)State the key finding in one sentence
+The workspace of the device was found as a hemisphere with a radius proportional to the length of the actuator. When increasing the stiffness of the device with nitinol and the kapton sleeve, the variation in paths was smaller 
+% 2)Offer a mechanistic explanation
+
+% 3)Compare to literature or expectation
+% 4)Acknowledge limitations or anomalies
+When adjusting lenght, the device showed a rotation in the z axis. This was due to the method of length adjustment. Since adjustment is done by clamping with a cable gland, the twisting to tighten also rotated the silicon actuator and therefore when pulling the handles in the marked order, the rotation of the device caused the actuation to perform differently.
+
+The device could not achieve a nice circle
+% 5)State the implication for your device/application
+The folded sleeve was shown to improve the controllability of the silicon actuator by increasing the torsional stiffness.
+
 
 
 \subsection{Navigation}
@@ -94,6 +124,20 @@ Practically the effects of the stiffness of the bellows are felt, when we use ou
 
 
 The introduction of a pressurised approach to controlling the locomotion of the device is beyond the scope of this
+
+
+
+% 1)State the key finding in one sentence
+The device successfully navigated the pre-planned path taking x seconds to complete the x cm journey with a success rate of 100\%.
+% 2)Offer a mechanistic explanation
+
+% 3)Compare to literature or expectation
+
+% 4)Acknowledge limitations or anomalies
+
+
+% 5)State the implication for your device/application
+
 \subsection{Clinical Case Study: Drug Delivery in Stomach}
 %Ask Ben about title
 
