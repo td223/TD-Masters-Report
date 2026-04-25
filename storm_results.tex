@@ -104,6 +104,9 @@ The lack of behavioural change implies that the assembly would be well suited to
     \label{fig:workspace}
 \end{figure}
 
+
+
+
 Workspace characterisation of a device is important to gain an understanding of the total regions that a device can get to
 
 
@@ -114,14 +117,24 @@ We tested 4 different assemblies which gradually increase the stiffness to demon
 
 
 % 1)State the key finding in one sentence
-The workspace of the device was found as a hemisphere with a radius proportional to the length of the actuator. When increasing the stiffness of the device with nitinol and the kapton sleeve, the variation in paths was smaller 
+The workspace of the device was found as a hemisphere with a radius proportional to the length of the actuator. When increasing the stiffness of the device with nitinol and the kapton sleeve, the variation in paths was smaller
+
+we found that increasing the stiffness of the device improved controllability. in the plots of the "triple" pattern (might be called uniaxial actuation) we see in the polar insert plots, without the PI sleeve, the device is prone to twisting near it's turning point, this is seen in the ``hooked'' shape near the tips. After adding the PI sleeve this feature disappeared. 
+
+When comparing the construction in a trajectory, we tried to pull one handle fully and then the next handle fully before letting the first handle off gradually, this was repeated until getting back round to the original handle. The 3D view is not very informative so the top down view of the 120mm device is shown. Again we reach the same conclusion that as the stiffness increases, particularly torsional stiffness, the variability in the trajectories and hence the controllability.
+
+We then compared the length of the device all with the stiffest construction, Kapton and the addition of nitinol down the internal channel. With an increase in actuator length we see the XY pathway changing from triangular to a more circular trajectory. 
 % 2)Offer a mechanistic explanation
+It is a well known fact in the soft robotics community that an increase ion stiffness often increases the controllability, with an interest in variable stiffness devices in order to stiffen for tasks requiring high dexterity and also to soften to minimise interactions with surroundings.
+
 
 % 3)Compare to literature or expectation
 % 4)Acknowledge limitations or anomalies
 When adjusting lenght, the device showed a rotation in the z axis. This was due to the method of length adjustment. Since adjustment is done by clamping with a cable gland, the twisting to tighten also rotated the silicon actuator and therefore when pulling the handles in the marked order, the rotation of the device caused the actuation to perform differently.
 
 The device could not achieve a nice circle
+
+The device was actuated manually using the attached handles. This meant there was no calculatable input variable and therefore the length of nitinol that had been pulled when actuating will inevitably be varied.
 % 5)State the implication for your device/application
 The folded sleeve was shown to improve the controllability of the silicon actuator by increasing the torsional stiffness.
 
