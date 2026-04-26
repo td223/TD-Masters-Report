@@ -1,26 +1,20 @@
 \section{Design}
-Actuators were constructed using a combination of a folded polyimide sleeve and a internal  multilumen silicon tube with nitinol wires for actuation. Our methodology is inspired by similar "bellows-style" approaches to construct continuum devices (references) with the key difference in the use of Polyimide sheets (Kapton) forming the main body of the device.
-
-This work focuses on the use of Kapton (thickness = ) due to its good robustness and high temperature capabilities.
+Actuators were constructed using a combination of a folded polyimide sleeve and an internal multilumen silicon tube with nitinol wires for actuation. The design of this device was inspired by similar origami based approaches to construct continuum devices (references)
 
 \subsection{Construction of a Folded Protective Sleeve}
 % Protective sleeves examples and uses:
-Protective sleeves are a common addition to soft actuators due to the damage prone nature of soft materials and also to increase the functionality for use in harsh environments such as high heat, flames, harsh chemical environments and space. Nanomaterial based coatings are often at the forefront resistance with examples based on flame and heat resistance and others for chemical resistance through harnessing superomniphobia \cite{qing2026enhancing} (resilient to almost all liquids). However nanomaterials are only suitable as coatings rather than the main building material, therefore the use of resilient polymers improves this. In this report, we use Kapton to form the main body of the protective sleeve. Kapton has been used before in protective sleeves and has been shown to survive harsh environments such as space. Most famously, the surface of Eagle, the Apollo 11 lunar landing module, was coated in Kapton film due to its thermal insulation properties. In this report, we construct a Kapton sleeve to be used for a resilient soft robotic device.
+Protective sleeves are a common addition to soft actuators to protect against harsh environments such as abrasive surfaces, high heat, strong chemicals and UV radiation.
+Nanomaterial based coatings are often at the forefront of resistance mechanisms with some focused on flame and heat resistance and others for chemical resistance through harnessing superomniphobia \cite{qing2026enhancing} (resilient to almost all liquids). However nanomaterials are only suitable as coatings rather than the main building material, therefore the use of resilient polymers has become more popular.
 
+In this report, we use polyimide (Kapton, Details) to form the main body of the protective polymer sleeve. Polyimides have been used before in protective sleeves and have been shown to be resistant to harsh environments. Possibly the most famous example of a polyimide as a protective layer was on the surface of Eagle, the Apollo 11 lunar landing module. This  coated in Kapton film due to its thermal insulation properties.
 
-% Folded bellows actuators examples and uses:
-Folded bellows style actuators have been demonstrated as 
-% Material choice:
-One of the harshest environments that robotics are commonly deployed in is space, materials for space robotics require lightweight, high compressibility, extreme temperatures, high UV radiation \cite{butler2016highly}. In the body, chemical resistance can be particularly useful with pHs of stomach acid being as low as 1. We opt for Kapton film as the main building material of our actuator due to its chemical, UV and heat resistance allowing a contructed device to be applicable to a wide number of scenarios.
-
-
-In order to achieve resilient structures, the chosen material needed to be available in film material, flexible, temperature resistant, chemical resistant
-Kapton and other polyimides contain ring structures that allow the partial break down of the polymer chain for the addition of intrinsic functionality without the complete conversion back to oligomer material.
+One of the harshest environments that robotics faces is space, materials for space robotics require lightweight, high compressibility, extreme temperature stability and high UV radiation resistance\cite{butler2016highly}. Other applications, such as in medical devices, require chemical resistance which is particularly useful when presented with the low pHs of stomach acid (pH 2-3). Kapton film has been shown to be highly resilient to UV and heat \cite{butler2016highly,sroog1965aromatic}, highly compressible when folded into cylinders \cite{butler2016highly} and relatively resistant to acids. Fuming nitric acid (HNO3) has been shown to degrade Kapton \cite{sroog1965aromatic}, however this was due to the highly oxidising nature of \ce{HNO3} unlike the gastric acid comprised mainly of hydrochloric acid which is not an oxidising agent. In addition to this, Kapton and other polyimides contain mellitimide ring structures allowing the partial break down of the polymer chain thereby motivating the addition of intrinsic functionality such as self-healing Diels-Alder groups without the complete conversion back to oligomer material.
 % Design choice:
 
-There three main designs of folded cylinders used in soft robotics: Kresling, Yoshimura and Accordion. Possible the most popular design is Kresling, which was discovered through the twist buckling of paper cyclinders\cite{masana2024kresling}, this was adapted to form consitent folds through the segmentation of a flat sheet into triangles to form a helical folding pattern\cite{zhang2025review}. Miuri patterns take the form of.... Yoshimura patterns are formed through the segmentation of a sheet into parallelograms in a diamond configuration, these parallelograms are bisected with horizontal lines to form triangles\cite{wickeler20234d}. Yoshimura designs can be modified by the inversion of specific protruding vertices to form a pattern known as Accordion. This transforms the parallelograms into hexagons and therefore the triangles into trapeziums. It has been previosuly shown that for an effective "wrinkle-free" compression, the triangles in Yoshimura designs should be right angles \cite{suh2021new} and hence, the hexagons in Accordion should have a horizontal short side length equal to $\sqrt{2}a$ and long side length to be $2\sqrt{2}a$ if the angled sides are of length $a$.
+There are three main designs of folded cylinders used in soft robotics: Kresling, Yoshimura and Accordion. Possibly the most popular design is Kresling, which was discovered through the twist buckling of paper cyclinders\cite{masana2024kresling}, this was adapted to form consitent folds through the segmentation of a flat sheet into triangles to form a helical folding pattern\cite{zhang2025review}. Yoshimura patterns are formed through the segmentation of a sheet into parallelograms in a diamond configuration, these parallelograms are bisected with horizontal lines to form triangles\cite{wickeler20234d}. Yoshimura designs can be modified by the inversion of specific protruding vertices to form a pattern known as Accordion. This transforms the parallelograms into hexagons and therefore the triangles into trapeziums. 
 
-An in depth analysis of Accordion versus Kresling was performed by Butler (2016)\cite{butler2016highly}, in which they found that the number of folds to make a functional device was approximately 10$\times$ less for the Kresling design. Often the initial failure of these devices occurs on the vertices, which is also lower in the Kresling. Also, when comparing compressibility (using Eq. \ref{eq:compress}), they find that while both designs have a a compressibility over 90\%, the Kresling design slightly outperforms the Accordion by 1.5\%. 
+
+An in depth analysis of the Accordion versus Kresling designs was performed by Butler (2016)\cite{butler2016highly}, in which they found that the number of folds to make a functional device was approximately 10$\times$ less for the Kresling design. Often the initial failure of these devices occured on the vertices, the frequency of failure was lower in the Kresling. Also, when comparing compressibility (using Eq. \ref{eq:compress}) it was found that, while both designs have a compressibility over 90\%, the Kresling design slightly outperforms the Accordion by 1.5\%. 
 
 \begin{equation}
     \label{eq:compress}
@@ -28,30 +22,52 @@ An in depth analysis of Accordion versus Kresling was performed by Butler (2016)
 \end{equation}
  
 
-Due to the configuration of the nitinol wires in the silicon actuation device, we found that the controllability was improved when the device had torsional stability. While there are methods of adapting a Kresling design to limit torsional movement through the reflection of alternating layers. The devices are inherently prone to torques through the helical design. Accordion Yoshimura designs are significantly more torque resistant in comparison. This is one of the primary reasons for our use of the Accordion folding pattern.
+Due to the configuration of the nitinol wires in the silicon actuation device, this report found that the controllability was improved when the device had torsional stability. While there are methods of adapting a Kresling design to limit torsional movement through the reflection of alternating layers. The devices are inherently prone to torque due to the helical design. Accordion Yoshimura designs are significantly more torque resistant in comparison. This is one of the primary reasons for the use of the Accordion folding pattern in this work.T he design parameters are summarised in figure and table \ref{tab:design_param}.
 
-Origami structures have been shown to minimise the buckling of catheters \cite{sargent2018using}.
+
+% Origami structures have been shown to minimise the buckling of catheters \cite{sargent2018using}.
 % Design params(mathematical description of design):
 
+\begin{table}
+\centering
+\begin{tabular}{ccc}
+    \hline
+    \textbf{Symbol} & \textbf{Description} & \textbf{Value}\\
+    \hline
+    $L_1$ & 10 & 2 \\
+    Mix 2 & 5 & 2 1\\
+    Mix 3 & 0 & 2 1 \\
+    \hline
+    
+\end{tabular}
+    \caption{Desing parameters for the contruction of the folded polyimide sleeve}
+    \label{tab:design_param}
+
+\end{table}
 
 % Torque resistance:
 % Construction(and manual versus machine):
 % limitations with construction:
-The actuator exhibits self-deploying characteristics, which are present in other devices. This is a product of treating the material as having non-zero thickness\cite{reid2017geometry}. Steps can be taken to avoiod thios by adjusting the location of the folds. however when flding by hand, there is so much precision that moving the folds by the thickness of the width of a sheet is not neccessary (there is a reference somewhere) 
 
-
-
-To manufacture an Accordion patterned sleeve, a 2D drawing to map the fold lines was drawn in Fusion360 and printed onto paper. This paper was taped to the table and a sheet of Kapton was taped over the top, the Kapton is clear so the printed lines are visible through. The lines were then traced onto the Kapton with a ruler and a ballpoint pen. The ballpoint pen marked the desired fold lines and also partially indented on the lines. The sheet of kapton was removed from the table and the outer edge was cut with scissors. The Kapton sheet was then folded along the lines as shown in the figure [ref figure]. The folds on the sheet were puished back out and the kapton was rolled into a cylinder. This was taped along the overlapped edge to form a temporary seal while maintaining care to line up the folds. The tape was removed in small sections and JBweld HighHeat was applied until the whole adhesion region. This was threaded onto a plastic tube with a diameter approx. 2mm smaller than the kapton sleeve. The sleeve was taped to the tube and the adhesion region was taped over the top to clamp the glued region. This was left for 24 hours to cure. The glueing and the curing process was performed in a Fume cupboard [brand/details] due to the risk of respiratory irritation through the curing process. After curing, the sleeve was removed from the plastic tube and a strip of Kapton tape was placed over the edge on the adhesion region. This improved the flexiblity of the region. one of the ends was folded over to make a cap and this was also glued. In this work, this assembly is known as the ``Kapton sleeve" or ``polyimide sleeve".
+\subsubsection{Manufacturing of a Folded Polyimide Sleeve}
+To manufacture an Accordion patterned sleeve, a 2D drawing to map the fold lines was drawn in Fusion360 (Autodesk, details) and printed onto paper. This paper was taped to a table and a sheet of Kapton was taped over the top, the Kapton is clear so the printed lines were visible through. The lines were then traced onto the Kapton with a ruler and a ballpoint pen. The ballpoint pen marked the desired fold lines and also partially indented on the lines. The sheet of kapton was removed from the table and the outer edge was cut with scissors. The Kapton sheet was then folded along the lines as shown in the figure [ref figure]. The folds on the sheet were inverted and the kapton was rolled into a cylinder. This was taped along the overlapped edge to form a temporary seal while maintaining care to line up the folds. The tape was removed in small sections and JBweld HighHeat was applied until the whole adhesion region. This was threaded onto a plastic tube with a diameter approx. 2mm smaller than the kapton sleeve. The sleeve was taped to the tube and the adhesion region was taped over the top to clamp the glued region. This was left for 24 hours to cure. The glueing and the curing process was performed in a Fume cupboard [brand/details] due to the risk of respiratory irritation through the curing process. After curing, the sleeve was removed from the plastic tube and a strip of Kapton tape was placed over the edge on the adhesion region. This improved the flexiblity of the region. One of the ends was folded over to make a cap and this was also glued. In this work, this assembly is known as the ``Kapton sleeve" or ``polyimide sleeve".
 
 \subsubsection{Manual folding versus using a plotter}
 A commercially available plotter (Cricut\textsuperscript{\textregistered}) was used with a scribe tool and a cutter to achieve a rapid manufacturing of a folded sleeve. This was attempted with paper initally for cheap prototyping and then with the polymer film. This would avoid the time consuming folding steps
-
 
 The Cricut was set up with the cricut design space software. This software allows the user to draw and communicate with the cricut either through bluetooth or via cable. The cricut has an adhesive cutting mat to hold the material in place whilst the tool interacts with it. For our testing, we drew a rectangle (10 x 5 cm) and set the cricut to cut on this line. Then a line (5cm) was drawn to split the long edge into two squares (5cm$^2$), this line was set to score. These two drawings were attached so as they would be performed in the same material loading cycle, the scoring was set to be first in the cricut's "job queue" to avoid there being potential for the score tool to catch the newly cut edge of the polymer and causee the adhesion between the sheet and the polymer to fail. A piece of the desired material was adhered to the cutting mat and the cricut was started. This method was repeated for 2 thicknesses of Kapton and 80gsm paper (roughly 0.25mm). 
 
 The three pieces of cut material were taped by the top edge to the jaws of a vice. The vice had the jaws enlarged by 3D printed pieces to ensure that the clamping would occur across the whole of the material. The vice was manually controlled to compress the pieces of material into the crease to form a fold and then slowly decompress to evaluate the fold. The folding with the paper was highly effective, when the jaws were opened the paper was clearly separated into two sections by a fold in the centre. Both thicknesses of Kapton were not so effective, when they were decompressed there was no clear fold line and the material was left haning in a curve. The plotter can visible score the Kapton, however, the score lines do not define a crease as the scoring tool does with paper. This phenomenon is explored further in the [put paper here], where polyimide is shown to not form precise folds.
 
 We determine here that the use of a plotter could be useful in the rapid production of folded sleeves, however in its current form, the cricut is not a viable route for creasing Kapton. A comprimise could be to use the cricut to draw the fold lines by using a pen in place of the scribe tool, this would allow the user to bypass the printing and tracing the pattern by hand. 
+
+\subsubsection{Limitations with the design and manufacturing}
+The actuator exhibits self-deploying characteristics, which are present in other devices. This is a product of treating the material as having non-zero thickness\cite{reid2017geometry}. Steps can be taken to avoiod thios by adjusting the location of the folds. however when flding by hand, there is so much imprecision that moving the folds by the thickness of the width of a sheet is not neccessary (there is a reference somewhere)  
+
+Previously, it has been shown to achieve an actuator with "wrinkle-free" compression, the triangles in Yoshimura designs should be right angled isoceles \cite{suh2021new} and hence, the hexagons in Accordion should have a horizontal short side length equal to $\sqrt{2}a$ and long side length to be $2\sqrt{2}a$ if the angled sides are of length $a$. The design in this work does not feature wholly right angle triangles as the hexagonal segments can be split into four right angled isoceles triangles and two squares. However, the slight deviations from perfect compressibility in this device have been attributed to the variability in the folding pattern rather than the optimised design mentioned by Suh (2021) \cite{suh2021new}.
+
+The polyimide was observed cracking on the vertices, although initally thought to be repairable with a patch of Kapton tape, the complexity of bending in that region meant constitent adhesion was not achieved. This meant the contructed sleeve was not air tight and therefore locomotion via changing air pressure was not successful with the current design.
+
 
 
 \subsection{Complete Assembly}
