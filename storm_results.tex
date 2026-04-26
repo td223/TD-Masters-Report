@@ -97,12 +97,25 @@ The lack of behavioural change implies that the assembly would be well suited to
 
 \subsection{Workspace Characterisation}
 
+The resultant workspace reachable by the tip of the actuator is shown in figure \ref{fig:heatmap}. It was observed that the reachable workspace of the device in the XY plane was aproximatly circular, however there is slight asymmetry in the circle, with an area of high density (associated with the relaxed actuator) at a slight positive Y shift. This plot was centred on the lowest point in the Z plane which therefore indicates a slight tip bend during the actuators relaxed state. In the X-Z view, a roughly circular workspace was observed, with the actuator achieving more than a semicircle shape, this demonstrates that the actuator can extend beyond the base of the device when fully actuated. The Y-Z view shows a more triangular shape, indicating that the device doesn't have a perfectly symmetrical workspace. This is due to the internal friction in the tendon channels causing the device to exhibit uneven behaviour.
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width = \linewidth]{Images/Heatmap.pdf}
+    \caption{cap}
+    \label{fig:heatmap}
+\end{figure}
+
+
 \begin{figure}
     \centering
     \includegraphics[width = \linewidth]{Images/Workspace.pdf}
     \caption{caption}
-    \label{fig:workspace}
+    \label{fig:3d_traj}
 \end{figure}
+
 
 
 
@@ -119,11 +132,20 @@ We tested 4 different assemblies which gradually increase the stiffness to demon
 % 1)State the key finding in one sentence
 The workspace of the device was found as a hemisphere with a radius proportional to the length of the actuator. When increasing the stiffness of the device with nitinol and the kapton sleeve, the variation in paths was smaller
 
-we found that increasing the stiffness of the device improved controllability. in the plots of the "triple" pattern (might be called uniaxial actuation) we see in the polar insert plots, without the PI sleeve, the device is prone to twisting near it's turning point, this is seen in the ``hooked'' shape near the tips. After adding the PI sleeve this feature disappeared. 
+we found that increasing the stiffness of the device improved controllability. in the plots of the "triple" pattern (might be called uniaxial actuation) we see in the polar insert plots in figure \ref{fig:3d_traj}, without the PI sleeve, the device is prone to twisting near it's turning point, this is seen in the ``hooked'' shape near the tips. After adding the PI sleeve this feature disappeared. 
 
 When comparing the construction in a trajectory, we tried to pull one handle fully and then the next handle fully before letting the first handle off gradually, this was repeated until getting back round to the original handle. The 3D view is not very informative so the top down view of the 120mm device is shown. Again we reach the same conclusion that as the stiffness increases, particularly torsional stiffness, the variability in the trajectories and hence the controllability.
 
-We then compared the length of the device all with the stiffest construction, Kapton and the addition of nitinol down the internal channel. With an increase in actuator length we see the XY pathway changing from triangular to a more circular trajectory. 
+We then compared the length of the device in fig \ref{fig:length_comp_traj} all with the stiffest construction, Kapton and the addition of nitinol down the internal channel. With an increase in actuator length we see the XY pathway changing from triangular to a more circular trajectory. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width = \linewidth]{Images/Length comparison trajectories.pdf}
+    \caption{cap}
+    \label{fig:length_comp_traj}
+\end{figure}
+
+
 % 2)Offer a mechanistic explanation
 It is a well known fact in the soft robotics community that an increase ion stiffness often increases the controllability, with an interest in variable stiffness devices in order to stiffen for tasks requiring high dexterity and also to soften to minimise interactions with surroundings.
 
@@ -178,3 +200,5 @@ The device successfully navigated the pre-planned path taking x seconds to compl
 %Ask Ben about title
 
 Finally, we demonstrate the use of the bellows based actuator in a stomach training simulator for the application of targeted drug delivery. Here we use the same assembly as the previous navigations with the addition of water to simulate the drug delivery. We use an external camera (camera details) inserted through a separate entry into the stomach to give an approximate location for completing the navigations. 
+
+The device was inserted into the stomach phantom in its shortest state
