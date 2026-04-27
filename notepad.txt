@@ -1,0 +1,26 @@
+Progress, Challenges, and Prospects of Soft Robotics for
+Space ApplicationsYongchang Zhang, Pengchun Li, Jiale Quan, Longqiu Li, Guangyu Zhang,*
+and Dekai Zhou: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aisy.202200071
+
+Space robotcs need to be robust and flexible
+Soft material absorb collision energy in impact of space debris without sustaining damage.
+Inflatable space station modules
+
+Under direct sunlight, the surface temperature of a spacecraft can reach 97 to 127 °C
+The ambient temperature on the surface of Mars is ~80–0 °C
+Space robots undergo significant thermal stress
+
+It is difficult to repair or replace components in space - need long term stability of space devices
+Therefore, it is critical to develop soft space materials that can withstand space environments and exhibit long-term stability.
+
+Soft robots are typically composed of soft materials with Young’s modulus less than 1 GPa ->
+
+This states Polyimide (temp tolerant) as a potential for use as a soft material for softrob, states Kapton (UV-inert) but doesn't say that is it suitable
+
+Has a whole section on actuation methods
+
+
+
+Lori Stephens hydrolysis and Whitesides contact angle
+
+Lori saids that they complete their hydrolysis at 30C with naoh and nano3. they measured this based on the whitesides paper about measuring contact angle versus pH. The whitesides papers

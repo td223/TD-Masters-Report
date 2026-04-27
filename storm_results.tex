@@ -51,6 +51,7 @@ The workspace of a device is the set of all reachable tip positions that the dev
 
 
 
+
 \begin{figure}
     \centering
     \includegraphics[width = \linewidth]{Images/Heatmap.pdf}
@@ -66,12 +67,17 @@ The workspace of a device is the set of all reachable tip positions that the dev
     \label{fig:3d_traj}
 \end{figure}
 
-Primary evaluation of the actuator performance was conducted through independent actuation of each tendon and monitoring the tip location in 3D space. Rotation matrices and xyz shifts were applied to the data to rotate the plots and align the base of the actuator at the origin ((x,y,z) = (0,0,0)). This was tested through 4 different assemblies of increasing stiffness, labelled ``Silicon'' for just the silicon actuator, ``Silicon with Nitinol'' for the silicon actuator with NiTi (0.6mm) inserted through the central channel, ``Kapton'' for the silicon actuator with the Kapton sleeve and finally ``Kapton with Nitinol'' as a combination of the ``Silicon with Nitinol'' surrounded with the polyimide sleeve. These constuctions were chosen to gradually increase the stiffness of the device in an attempt to decrease the variation in the device and therefore improve the controllability. It was observed that the variation in paths was lowered through increasing the stiffness, with the polyimide sleeve constraining torsional movement.
+\subsubsection{Uniaxial Trajectory Characterisation}
 
-Starting with the least stiff assembly, the ``Silicon'' actuator only, it was observed that through independent actuation of the device was difficult to control, this is presented in the plots in figure \ref{fig:3d_traj}. After increasing the stiffness through the insertion of the nitinol wire in ``Silicon with Nitinol'', a more manouverable device was observed. The polar insert plots \ref{fig:3d_traj} showed that the trajectories were 120$\degree$ apart, however also observed was a twisting motion at the tip of the device, giving the plots a ``hooked'' shape. This deformation explained the reduction in vertical displacement of the actuator (see 3D plot \ref{fig:3d_traj}). When adding the polyimide sleeve to constrain the torsional deformation of the actuator in the ``Kapton'' experiment, the ``hooked'' shape was minimised, however the device did not achieve trajectories with even 120$\degree$ paths, instead the path exhibited a region of approxmately 170$\degree$ with consistent path. There was a small region of tracking observed within this region, however this was not linked to the other tracking points due to the actuator body partially occluding the reflective ball from view of the cameras. Again the polar insert plots \ref{fig:3d_traj} revealed that the independent actuation of the ``Kapton with Nitinol'' also contained a wide region with no tip tracking data. This implied that the Kapton sleeve was providing unwanted asymmetry which was attributed to the glued seam in the polyimide sleeve.  
+Primary evaluation of the actuator performance was conducted through independent actuation of each tendon and monitoring the tip location in 3D space. Rotation matrices and xyz shifts were applied to the data to rotate the plots and align the base of the actuator at the origin ($(x, y, z) = (0, 0, 0)$). This was tested through 4 different assemblies of increasing stiffness, labelled \textit{Silicon} for just the silicon actuator, \textit{Silicon with Nitinol} for the silicon actuator with NiTi (0.6mm) inserted through the central channel, \textit{Kapton} for the silicon actuator with the Kapton sleeve and finally \textit{Kapton with Nitinol} as a combination of the \textit{Silicon with Nitinol} surrounded with the polyimide sleeve. These constuctions were chosen to gradually increase the stiffness of the device in an attempt to decrease the variation in the device and therefore improve the controllability. It was observed that the variation in paths was lowered through increasing the stiffness, with the polyimide sleeve constraining torsional movement. The occurence of dexterity improving with stiffness is a known phenomenon in the soft robotics community with efforts to created devices with variable stiffness to allow for ease of manouverability and high controllabilty for complex tasks.
+
+Starting with the least stiff assembly, the \textit{Silicon} actuator only, it was observed that through independent actuation of the device was difficult to control, this is presented in the plots in figure \ref{fig:3d_traj}. After increasing the stiffness through the insertion of the nitinol wire in \textit{Silicon with Nitinol}, a more manouverable device was observed. The polar insert plots \ref{fig:3d_traj} showed that the trajectories were 120$\degree$ apart, however also observed was a twisting motion at the tip of the device, giving the plots a ``hooked'' shape. This deformation explained the reduction in vertical displacement of the actuator (see 3D plot \ref{fig:3d_traj}). When adding the polyimide sleeve to constrain the torsional deformation of the actuator in the \textit{Kapton} experiment, the ``hooked'' shape was minimised, however the device did not achieve trajectories with even 120$\degree$ paths, instead the path exhibited a region of approxmately 170$\degree$ with consistent path. There was a small region of tracking observed within this region, however this was not linked to the other tracking points due to the actuator body partially occluding the reflective ball from view of the cameras. Again the polar insert plots \ref{fig:3d_traj} revealed that the independent actuation of the \textit{Kapton with Nitinol} also contained a wide region with no tip tracking data. This implied that the Kapton sleeve was providing unwanted asymmetry which was attributed to the glued seam in the polyimide sleeve.  
 
 
-Another characterisation method investigated a multiaxial trajectory, whereby the first handle was pulled fully, then another pulled fully before slowly releasing the original handle. This method was repeated with all three handles until the actuator had returned to the starting point. This method was inspired by the out-of-phase sinosoidal actuation by Chandler (2020) cite chandler.  
+\subsubsection{Multiaxial Trajectory Characterisation}
+
+
+Another characterisation method investigated a multiaxial trajectory, whereby the first handle was pulled fully, then another pulled fully before slowly releasing the original handle. This method was repeated with all three handles until the actuator had returned to the starting point. This method was inspired by the out-of-phase sinosoidal actuation by Chandler (2020) cite chandler. After examining the least stiff construction, \textit{Silicon}, it was observed that there was minimal vertical movement and a polar plot indicative of tip-twisting as observed in the previous experiment. After adding the internal nitinol, \textit{Silicon with Nitinol} was observed to be more controllable. It was observed that the XY plot was more circular than without the nitinol and had a radius of approximately 50mm. Adding the polyimide sleeve to give the \textit{Kapton} construction resulted in an off-center oval-shaped XY plot that had a semi-major axis of approximately 100 mm and a semi-minor axis of 75mm. Finally, the stiffest construction, \textit{Kapton with Nitinol}, was a more regular shape in the XY plot and the greatest vertical displacement of the four contsructions. The XY plot shape had a radius of approximately 100mm. As with the \textit{Kapton} construction, the plot was not centered which was attributed to the asymmetric behaviour due to the seam in the polyimide sleeve.  
 
 %look this not circlur
 %hooks
@@ -80,19 +86,13 @@ Another characterisation method investigated a multiaxial trajectory, whereby th
 %radius of circular plots
 %what sizes do applications need ( how big is a stomach)
 %implictions, within the wider space of engineering, what does this mean, the variable lenght is an improvement on traditional endoscopes add the word manouverability
-%mentioning the challenges of the fact is actually a hollow sphere, the changing lenths impives this
+%mentioning the challenges of the fact is actually a hollow sphere, the changing lenths improves this
 
 
 
-
+\subsubsection{Variable Length of the Actuator}
 % 1)State the key finding in one sentence
-The workspace of the device was found as a hemisphere with a radius proportional to the length of the actuator. When increasing the stiffness of the device with nitinol and the kapton sleeve, the variation in paths was smaller
-
-we found that increasing the stiffness of the device improved controllability. in the plots of the "triple" pattern (might be called uniaxial actuation) we see in the polar insert plots in figure \ref{fig:3d_traj}, without the PI sleeve, the device is prone to twisting near it's turning point, this is seen in the ``hooked'' shape near the tips. After adding the PI sleeve this feature disappeared. 
-
-When comparing the construction in a trajectory, we tried to pull one handle fully and then the next handle fully before letting the first handle off gradually, this was repeated until getting back round to the original handle. The 3D view is not very informative so the top down view of the 120mm device is shown. Again we reach the same conclusion that as the stiffness increases, particularly torsional stiffness, the variability in the trajectories and hence the controllability.
-
-We then compared the length of the device in fig \ref{fig:length_comp_traj} all with the stiffest construction, Kapton and the addition of nitinol down the internal channel. With an increase in actuator length we see the XY pathway changing from triangular to a more circular trajectory. 
+ 
 
 \begin{figure}
     \centering
@@ -101,24 +101,17 @@ We then compared the length of the device in fig \ref{fig:length_comp_traj} all 
     \label{fig:length_comp_traj}
 \end{figure}
 
+Since this device has a variable length it is not limited in its workspace to the hollow hemisphere in Fig.\ref{fig:heatmap}. This means that in comparison to other devices without this capability the workspace is a much greater proportion of the hemisphere than a device without length variability. In medical engineering, this is an improvement on traditional surgical catheters that need to be retracted through the patient causing large shear forces on the surrounding surfaces in the body. In this polyimide-sleeved device, the retraction occurs within the body of the device to ``improve patient comfort''.
 
-% 2)Offer a mechanistic explanation
-It is a well known fact in the soft robotics community that an increase ion stiffness often increases the controllability, with an interest in variable stiffness devices in order to stiffen for tasks requiring high dexterity and also to soften to minimise interactions with surroundings.
+Another workspace based experiment was conducted in which the same multiaxial actuation was used to manouver the tip of the device. This was conducted at three different lengths: 60 mm, 90mm and 120mm in the \textit{Kapton with Nitinol} contruction. In the XY plane with an actuator length of 60mm, the trajectory was generally triangular with three distinct points roughly 120mm apart. As the length of the device was increased, the shape of the trajectory was observed to become more circular with a radius approximately equal to the device length. It can be observed that there was a rotation in the trajectory of the plots as the length changed. This occured as a cable gland clamped the silicon actuation device to the desired length and the tightening rotation also caused a slight rotation in the actuator. Data was also collected for the other stiffness constuctions, however the trends in the data were the same.
 
-
-% 3)Compare to literature or expectation
-% 4)Acknowledge limitations or anomalies
-When adjusting lenght, the device showed a rotation in the z axis. This was due to the method of length adjustment. Since adjustment is done by clamping with a cable gland, the twisting to tighten also rotated the silicon actuator and therefore when pulling the handles in the marked order, the rotation of the device caused the actuation to perform differently.
-
-The device could not achieve a nice circle
-
-The device was actuated manually using the attached handles. This meant there was no calculatable input variable and therefore the length of nitinol that had been pulled when actuating will inevitably be varied.
-% 5)State the implication for your device/application
-The folded sleeve was shown to improve the controllability of the silicon actuator by increasing the torsional stiffness.
 
 
 
 \subsection{Navigation}
+Notes:
+tip tracking versus time                                                                                                                                                                                                                                                                 
+
 
 \begin{figure}
     \centering
