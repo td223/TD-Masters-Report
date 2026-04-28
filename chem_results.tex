@@ -14,7 +14,10 @@
     \caption{Structure of polyamic acid}
     \label{fig:PAA}
 \end{figure}
-
+\begin{equation}
+    \ce{C22N2O5H10 + NaOH -> C22N2O6H11Na}
+    \label{eq:hydro}
+\end{equation}
 
 
 The method for hydrolysis used was based on previous literature publications \cite{stephans2000kinetics,thomas1992organic,plechaty1992chemical,dow2010modification,liu2019efficient,wu2017study,xue1986studies,stoffel1996surface} where an alkaline solution is used to hydrolyse polyimide to form a salt intermediate and then an acidification to form carboxlyic acid groups. A NaOH solution (0.2M) \cite{stephans2000kinetics,thomas1992organic,plechaty1992chemical} was initially trialled for the alkaline hydrolysis step at room temperature for 90 mins, however when there was minimal change under Infrared spectrometry (IR), the temperature of the reaction was increased to 120$\degree$C. Also, the NaOH concentration was adapted similar to that used in Xue (1986)\cite{xue1986studies}. This comprised of the use  of 1 equiv. OH$^{-}$ for every 1 monomer of the polyimide. This was chosen to ensure a partial hydrolysis, to only expose one carboxylic acid group rather than the total hydrolysis to form a tetrasubstituted benzene ring. However during analysis of this reactio we also observed minimal hydrolysis via IR.
@@ -127,11 +130,19 @@ Due to the difference in absorbance for the acetic acid and the PAA and the cata
 
 
 \subsection{Cross-linking of the Polyimide}
-Cross-linking attempts follow a route where ethylene carbonate (EC) is used to form an ester with the carboxylic acids on neighbouring polymer chains, thereby joining them together with a ``cross-link''. This was attempted with three different salts (\ce{Et4NBr},\ce{ZnCl2}, \ce{FeCl3}) as catalysts. 
+\begin{equation}
+    \ce{2 C21N2O5H13-CO2H + C3O3H4 ->[cat. salt] (C21N2O5H13)2C4O4H4 + CO2 + H2O}
+    \label{eq:crosslink}
+\end{equation}
+
+Cross-linking attempts follow a route where ethylene carbonate (EC) is used to form an ester with the carboxylic acids on neighbouring polymer chains, thereby joining them together with a ``cross-link''. This was attempted with three different salts (\ce{Et4NBr}, \ce{ZnCl2}, \ce{FeCl3}) as catalysts. 
 
 During the cross-linking reaction with \ce{Et4NBr}, an orange-brown suspension was formed that when washed, filtered and freeze dried yielded a pale orange powder. With \ce{ZnCl2}, the liquid was a dark orange clear liquid that, when water was added, gave a single clump of grey polymeric residue. This was freeze dried to remove the excess water and then analysed. The cross-linking reaction with the \ce{FeCl3}, yielded a dark orange/brown gel, which formed a grey gum-like texture in small pieces when water was added. This was also frozen and analysed. 
 
-During a cross-linking with ethylene carbonate, \ce{CO2} is released. This was a concern as the monowave reactor has a pressure limit of 20 bar. To ensure there was a reliable safety buffer, an artificial limit of 5 bar was set. The Ideal Gas law was used to give the amount of EC to use to ensure this limit was held.
+
+\subsubsection{Safety Consideration}
+
+During a cross-linking with ethylene carbonate, \ce{CO2} is released (Eq. \ref{eq:crosslink}). This was a concern as the monowave reactor has a pressure limit of 20 bar. To ensure there was a reliable safety buffer, an artificial limit of 5 bar was set. The Ideal Gas law was used to give the amount of EC to use to ensure this limit was held.
 
 \[PV = nRT \rightarrow n = \frac{PV}{RT}\]
 \begin{center}
