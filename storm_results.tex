@@ -32,7 +32,7 @@ Deviations from a smooth curve observed in the extension of the device were attr
 In the future, a control platform will be developed. This would include linear actuators to control the nitinol tendons and a vaccum/pressure pump to control the locomotion. This platform would need to allow for the fact that when constrained to a length shorter than 120mm the force required for forwards locomotion has been shown here to have a non-linear relationship to the length of the device. The unpressurised characterisation shown in this experiment sets a low bound on the stiffness of the device, when pressurised the device will exert more force axially.
 
 
-\subsection{Temperature Stability of the Bellows}
+\subsubsection{Temperature Stability of the Bellows}
 
 \begin{figure}
     \centering
@@ -120,17 +120,21 @@ tip tracking versus time
     \label{fig:stick_nav}
 \end{figure}
 
-To demonstrate the robots ability to navigate an arbitrary path, a route was set up using 3D printed obstacles to simulate a path that a real world use case could need. The goal of the path was to show that fluid could be delivered through a channel in the silicon inner tube.
+To demonstrate the robots ability to navigate an arbitrary path, a route was set up using 3D printed obstacles. The goal of the path was to navigate to and deploy fluid within the area highlighted in green \ref{fig:stick_nav}.
 
-This path started shorted than the relaxed length of the actuator and so required the operator to pull on the silicon tube to retract the device before steering the device using the tendons. 
+The start position of the path required a shorter length than the relaxed length of the actuator and therefore the operator was required to apply tension to the silicon actuator in order to retract the device before steering the device using the tendons. 
  
-Extending the device further than the relaxed length was difficult due to the soft the silicon tube buckling under compression. This meant that the maximum path length was limited to around 120mm. %check this
+% Extending the device further than the relaxed length was difficult due to the silicon tube buckling under compression. This meant that the maximum path length was limited to around 120mm. %check this
+
+The effects of the bellows elastic charicteristic were noticable, with the device easily extending to reach the relaxed length. After this point, overcoming the force of the sleeve pushing back on the silicon actuation device causes buckling internally due to the lack of rigidity of the silicon tube. Therefore the maximum path was limited to 120mm.
 
 
-Practically the effects of the stiffness of the bellows are felt, when we use our device for naviagation we found that retracting the silicon and extending is by pushing it was easy until the relaxed point. After this, overcoming the force of the sleeve pushing back on the silicon actuation device causes buckling internally due to the lack of rigidity of the silicon tube.
 
 
-The introduction of a pressurised approach to controlling the locomotion of the device is beyond the scope of this
+The introduction of a pressurised approach to controlling the locomotion of the device is beyond the scope of this. Adding a pressurised locomotion would stop the buckling of the device at 120mm due to the internal locomotive force applied via air-pressure rather than the silicon device. Blocked force testing of the silicon actuator would be interesting as then it would be understood to what point you can rely on just the silicon device and then at what point air pressure was neccessary for forward growth.
+
+\subsubsection{Tip-tracking and Optimisation}
+An XY tip position was recorded and calculated at x frame intervals, this was used to plot fig. (xy_nav fig) 
 
 
 
@@ -145,7 +149,7 @@ The device successfully navigated the pre-planned path taking x seconds to compl
 
 % 5)State the implication for your device/application
 
-\subsection{Clinical Case Study: Drug Delivery in Stomach}
+\subsubsection{Clinical Case Study: Drug Delivery in Stomach}
 %Ask Ben about title
 
 Finally, we demonstrate the use of the bellows based actuator in a stomach training simulator for the application of targeted drug delivery. Here we use the same assembly as the previous navigations with the addition of water to simulate the drug delivery. We use an external camera (camera details) inserted through a separate entry into the stomach to give an approximate location for completing the navigations. 
