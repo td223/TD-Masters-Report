@@ -133,13 +133,8 @@ The effects of the bellows elastic charicteristic were noticable, with the devic
 
 The introduction of a pressurised approach to controlling the locomotion of the device is beyond the scope of this. Adding a pressurised locomotion would stop the buckling of the device at 120mm due to the internal locomotive force applied via air-pressure rather than the silicon device. Blocked force testing of the silicon actuator would be interesting as then it would be understood to what point you can rely on just the silicon device and then at what point air pressure was neccessary for forward growth.
 
-\subsubsection{Tip-tracking and Optimisation}
-An XY tip position was recorded and calculated at x frame intervals, this was used to plot fig. (xy_nav fig) 
-
-
-
 % 1)State the key finding in one sentence
-The device successfully navigated the pre-planned path taking x seconds to complete the x cm journey achieving a tip angle of 30$\degree$. 
+The device successfully navigated the pre-planned path taking x seconds to complete the x cm journey achieving a tip angle of 30 $\degree$. 
 % 2)Offer a mechanistic explanation
 
 % 3)Compare to literature or expectation
@@ -147,11 +142,21 @@ The device successfully navigated the pre-planned path taking x seconds to compl
 % 4)Acknowledge limitations or anomalies
 
 
+\subsubsection{Tip-tracking and Optimisation}
+An XY tip position was recorded and calculated at x frame intervals, this was used to plot fig. (xy-nav fig). This plot shows the XY position of the tip of the actuator and of the two obstacles. The colour map has been added to show the time taken in seconds to complete the path. Naviagtion around obstacle 1 proved challenging due to the high curvature compared to the actuator length required, at around (160, 130) this shows the region where the 3D-printed cap on the distal end of the device was colliding with obstacle 1. Across the three repeats of this navigation, this collision became less frequent through user improvement of the device control. Due to the manual control, there were moments of user error in the actuation. This was observed in the rapid movement from (220, 140) to (160,180) and then back. An optimal trajectory was obtained with the placement of three points, these correspond to the closest points that the actuator could be to the obstacles the minimise the tip angle of the device. The line connecting these points was fitted with a polynomial of degree 3 and is indicative of the optimal tip route. The true path of the actuator featured a much greater X displacement as the extension and lateral control of the device require opposite input mechanisms. Therefore a neccessary duty cycling approach of axial growth and lateral actuation was adopted. In the future, the device will be tracked using the Optitrack cameras to allow Z-displacement to be calculated.
+
 % 5)State the implication for your device/application
 
 \subsubsection{Clinical Case Study: Drug Delivery in Stomach}
 %Ask Ben about title
 
-Finally, we demonstrate the use of the bellows based actuator in a stomach training simulator for the application of targeted drug delivery. Here we use the same assembly as the previous navigations with the addition of water to simulate the drug delivery. We use an external camera (camera details) inserted through a separate entry into the stomach to give an approximate location for completing the navigations. 
+Finally, we demonstrated the use of the actuator in a stomach training simulator for the application of targeted drug delivery. Here we use the same assembly as the previous navigations with the addition of water to simulate the drug delivery. We used an external camera (camera details) inserted through a separate entry into the stomach to give an approximate location for completing the navigations. 
 
-The device was inserted into the stomach phantom in its shortest state
+The device was inserted into the stomach phantom at the shortest state before being extended and controlled from the section of the device outside the phantom. This demonstrated the ability of the device to reach areas and deploy liquids. 
+
+
+
+\subsection{Moulding of Polyamic Acid}
+Polyamic acid undergoes a thermal imidisation reaction at 150-200$\degree$C to form polyimide. The formation of components other than films is desirable for the manufacturing of components needing the high performance properties of polyimide. An arbitrary moulded component was completed after drying PAA for 1 week of NMP.
+
+An attempt was made by pouring PAA in NMP into a mould and heating to 150$\degree$C on a hotplate, however after 10 minutes a yellow powder was obtained. It was assumed that the lack of a unified tructure was due to the solvent interrupting the curing process. Therefore a second attempt was made with the aim to remove the solvent before curing.Care was needed to avoid the thermal imidisation threshold of 150$\degree$C but whilst evaporating NMP solvent which has a higher boiling point (202$\degree$C). Therefore the use of a Smartvap was neccessary. The connecting end of the smartvap is designed for vials of diameter (x) however it was observed that the viscosity of the polyamic acid increasing as it dried, it was decided the drying should occur whilst in the mould. Therefore an adaptor was designed in Fusion360 and printed in TPU (details) to allow the smartvap to connect to the top of the mould to allow the PAA to be dried in situ. After a week of drying, the TPU adaptor was removed and the mould was placed onto a hot plate set to 150$\degree$C. After 1 hour, the mould was cooled, removed and the moulded component was removed from the mould with a scalpel. The base of the cone had a smooth texture whereas at the tip, one single piece was not obtained. This was again assumed to be due to the PAA partially being in solution.
